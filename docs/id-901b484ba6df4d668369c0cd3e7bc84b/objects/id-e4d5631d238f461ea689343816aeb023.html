@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Toepassingen - Canvas</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.4.1.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Toepassingen - Canvas</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-DiagramModelGroup"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-DiagramModelGroup" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+                    <!-- Analysis -->
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+									        <tr>
+									           <td> <a href="../objects/id-e53bbb79b6d64be1b13d650a52186331.html" target="element"> Mono disciplinair </a> </td>
+									           <td> <a href="../objects/id-e53bbb79b6d64be1b13d650a52186331.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-cc0678b130cb4f7e8547ef520684b368.html" target="element"> Netwerkzorg </a> </td>
+									           <td> <a href="../objects/id-cc0678b130cb4f7e8547ef520684b368.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-a4a874a9767346b583526a6660a5145a.html" target="element"> Pati&#235;nt </a> </td>
+									           <td> <a href="../objects/id-a4a874a9767346b583526a6660a5145a.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-095bec3d50314b67a069f28156021ced.html" target="element"> ZMCS </a> </td>
+									           <td> <a href="../objects/id-095bec3d50314b67a069f28156021ced.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-9a6f686419b5409bb580280b131890a7.html" target="element"> Logica/ BI/ AI </a> </td>
+									           <td> <a href="../objects/id-9a6f686419b5409bb580280b131890a7.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-4136607c038f4a9fb8831aabfd237897.html" target="element"> Onderzoek en beleid </a> </td>
+									           <td> <a href="../objects/id-4136607c038f4a9fb8831aabfd237897.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-e7a7bbb3e32843949e3363bc3bc93d88.html" target="element"> Mono disciplinair - canvas </a> </td>
+									           <td> <a href="../objects/id-e7a7bbb3e32843949e3363bc3bc93d88.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-0d5d48b01416408e8d43ecc684931532.html" target="element"> EPD </a> </td>
+											           <td> <a href="../objects/id-0d5d48b01416408e8d43ecc684931532.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-c07de4268c3b4e25852e924d5ce202bb.html" target="element"> ECD </a> </td>
+											           <td> <a href="../objects/id-c07de4268c3b4e25852e924d5ce202bb.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-292b9f4fb8c44ae0ad59afa3ee0e6a33.html" target="element"> PACS </a> </td>
+											           <td> <a href="../objects/id-292b9f4fb8c44ae0ad59afa3ee0e6a33.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-bfb3e41e064a4d979b8d12fb561a5412.html" target="element"> HIS </a> </td>
+											           <td> <a href="../objects/id-bfb3e41e064a4d979b8d12fb561a5412.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-eec6a7c3706b45979653e823b7124aec.html" target="element"> KIS </a> </td>
+											           <td> <a href="../objects/id-eec6a7c3706b45979653e823b7124aec.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-797e6d42e4334d8f9b91984bdb82cfc2.html" target="element"> AIS </a> </td>
+											           <td> <a href="../objects/id-797e6d42e4334d8f9b91984bdb82cfc2.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-c04badbfe7774824be02924780bd5960.html" target="element"> LIS </a> </td>
+											           <td> <a href="../objects/id-c04badbfe7774824be02924780bd5960.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-3c21a93801824f28a0b1c3a0d3f3e6ef.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-3c21a93801824f28a0b1c3a0d3f3e6ef.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											
+									        <tr>
+									           <td> <a href="../objects/id-9abb23888fc341809702debc4fe582ef.html" target="element"> Netwerkzorg - canvas </a> </td>
+									           <td> <a href="../objects/id-9abb23888fc341809702debc4fe582ef.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-4c50d3768749493ab314d3d4e8b0712b.html" target="element"> MDO </a> </td>
+											           <td> <a href="../objects/id-4c50d3768749493ab314d3d4e8b0712b.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-46cbe458782346a8bf2417333566c457.html" target="element"> Viewer </a> </td>
+											           <td> <a href="../objects/id-46cbe458782346a8bf2417333566c457.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-41c307113c3547b894f2cc4215454212.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-41c307113c3547b894f2cc4215454212.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-5befc0b0d91444a29a7025105e124308.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-5befc0b0d91444a29a7025105e124308.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											
+									        <tr>
+									           <td> <a href="../objects/id-27613d6370c84a6380f10158e48a65cd.html" target="element"> Pati&#235;nt - canvas </a> </td>
+									           <td> <a href="../objects/id-27613d6370c84a6380f10158e48a65cd.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-65561badd75544f186068761a66d753c.html" target="element"> PGO </a> </td>
+											           <td> <a href="../objects/id-65561badd75544f186068761a66d753c.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-187d3b1e125a4138b503f360d745fbc3.html" target="element"> MGO </a> </td>
+											           <td> <a href="../objects/id-187d3b1e125a4138b503f360d745fbc3.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-06f48ae0c54a4f65bcdc1c7dbea4ad0c.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-06f48ae0c54a4f65bcdc1c7dbea4ad0c.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-94806c7e430c43ac8b3bdf5fa54f0099.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-94806c7e430c43ac8b3bdf5fa54f0099.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											
+									        <tr>
+									           <td> <a href="../objects/id-343fdfb7a6004671aa3d8b1c8c1df3ca.html" target="element"> ZMSC - Canvas </a> </td>
+									           <td> <a href="../objects/id-343fdfb7a6004671aa3d8b1c8c1df3ca.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-bb02f4cb8ca84b70aa3930a82d4a6716.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-bb02f4cb8ca84b70aa3930a82d4a6716.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-976f8a228310447981f32fa81828a02b.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-976f8a228310447981f32fa81828a02b.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-4afb02a041584afc84b31a0b2723a040.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-4afb02a041584afc84b31a0b2723a040.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-b11a814be0e046e0879bd16cbbaca2a7.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-b11a814be0e046e0879bd16cbbaca2a7.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											
+									        <tr>
+									           <td> <a href="../objects/id-525ade849fe544daa92ff19d2198d8c7.html" target="element"> Logica/ BI/ AI - canvas </a> </td>
+									           <td> <a href="../objects/id-525ade849fe544daa92ff19d2198d8c7.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-3605e9bb5d4d4b0395faced8d4a029b1.html" target="element"> Workflow ondersteuning </a> </td>
+											           <td> <a href="../objects/id-3605e9bb5d4d4b0395faced8d4a029b1.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-5def900debfb47fea40a1f3522807ce5.html" target="element"> AIS </a> </td>
+											           <td> <a href="../objects/id-5def900debfb47fea40a1f3522807ce5.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-d668dc23430040a7b654e87e7549251d.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-d668dc23430040a7b654e87e7549251d.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											
+									        <tr>
+									           <td> <a href="../objects/id-5fb431017e7f47e580afa858a2bd55ef.html" target="element"> Onderzoek en beleid - canvas </a> </td>
+									           <td> <a href="../objects/id-5fb431017e7f47e580afa858a2bd55ef.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+									        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-f1eec0ed56e14a7994f5cf2cb6044450.html" target="element"> Cohort data </a> </td>
+											           <td> <a href="../objects/id-f1eec0ed56e14a7994f5cf2cb6044450.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-290d46c7761447e391e245518e7031e9.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-290d46c7761447e391e245518e7031e9.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-713bb496c6674f1a8ded2d938cd0bd3d.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-713bb496c6674f1a8ded2d938cd0bd3d.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-e9ce6c1fe26047c6a5d6f4bc507d5ce8.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-e9ce6c1fe26047c6a5d6f4bc507d5ce8.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-0cd2c1fd8da24d44b75a737670dc5249.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-0cd2c1fd8da24d44b75a737670dc5249.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-334f8a664c5d40eebec82bb6e487178f.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-334f8a664c5d40eebec82bb6e487178f.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-4cc0fbe8141146b391889cbe4e150fff.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-4cc0fbe8141146b391889cbe4e150fff.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											        <tr>
+											           <td> <a href="../objects/id-f6f3ce5c71654d408a75a719e362e227.html" target="element"> ... </a> </td>
+											           <td> <a href="../objects/id-f6f3ce5c71654d408a75a719e362e227.html" target="element" class="i18n-elementtype-DiagramModelGroup"> </a> </td>
+											        </tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelGroup -->
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
